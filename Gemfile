@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
 group :test do
-  gem "test-unit",  "~> 2.0.9"
-  gem "webrat",     "~> 0.7.0"
-  gem "mocha",      "~> 0.9.8", :require => false
+  gem "test-unit",  ">= 2.0.9"
+  gem "webrat",     ">= 0.7.0"
+  gem "mocha",      ">= 0.9.8", :require => false
 end
 
 group :default do
-  gem "rails",      "~> 3.2.0"
-  gem "webrat",     "~> 0.7.0"
+  gem "rails",      ">= 3.2.0"
+  gem "webrat",     ">= 0.7.0"
 
-  gem 'couchrest_model',        '~> 2.0.0.beta2'
+  gem 'couchrest_model',        '>= 2.0.4'
   gem 'devise',                 '>= 2.1.0'
   gem 'devise-encryptable'
   gem 'bson_ext',               '>= 1.2.0'
@@ -18,8 +18,8 @@ group :default do
   gem 'rake',                   '>= 0.8.7'
   gem "orm_adapter"
   gem "orm_adapter_couchrest_model"
-  # gem "oa-oauth",   '~> 0.3.0', :require => "omniauth/oauth"
-  # gem "oa-openid",  '~> 0.3.0', :require => "omniauth/openid"
-  gem "omniauth-openid", '~>1.0.0'
-  gem "omniauth-facebook", '~>1.2.0'
+  # gem "oa-oauth",   '>= 0.3.0', :require => "omniauth/oauth"
+  # gem "oa-openid",  '>= 0.3.0', :require => "omniauth/openid"
+  gem "omniauth-openid", '>=1.0.0'
+  gem "omniauth-facebook", '>=1.2.0'
 end
