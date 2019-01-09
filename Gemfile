@@ -17,7 +17,8 @@ group :default do
 
   gem 'rake',                   '>= 0.8.7'
   gem "orm_adapter"
-  gem "orm_adapter_couchrest_model"
+  gem "orm_adapter_couchrest_model", git: 'https://github.com/mudynamics/orm_adapter_couchrest_model.git',
+                                     ref: '4e8b55de11354c7308b35b091506cee69d6bb5b6'
   # gem "oa-oauth",   '>= 0.3.0', :require => "omniauth/oauth"
   # gem "oa-openid",  '>= 0.3.0', :require => "omniauth/openid"
   gem "omniauth-openid", '>=1.0.0'
